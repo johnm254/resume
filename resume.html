@@ -1,54 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 <head>
-<title>JOHN MWANGI </title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Professional resume of Sarah Chen - Full Stack Developer">
-    
-    </title>
+  <meta charset="UTF-8" />
+  <title>John Mwangi | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class'
+    }
+  </script>
+
+  <style>
+    body { perspective: 1200px; }
+  </style>
 </head>
-<body>
-    <hi> john mwangi</hi>
-    <h2>contact information</h2>
-    <p>Email:johnmwaangi1729@gmail.com</p>
-    <p>Phone: +254745884952</p>
-    <h2>Education</h2>
-    <ul>
-        <li>Bachelor of Science in Business with information technology and management, jomo kenyatta university of technology, 2024-2029</li>
-        <li>High School, Gititu High School, 2020-2024</li>
-    </ul>
-    <h2>Skills</h2>
-    <ul>
-        <li>Programming languages: Python, Javascript</li>
-        <li>Web Development: HTML, CSS, JavaScript</li>
-        <li>Database Management: SQL, MongoDB</li>
-        <li>Design :mockups, poster,pitch deck and flyers</li>
-    </ul>
-    <h2>Experience</h2>
-    <ul>
-        <li>Freelance , January 2024- Present
-            <ul>
-                <li>Designed a mockup for a businessm.</li> 
-                <li>Managed client communications and project timelines effectively.</li>
-            </ul>
+
+<body class="bg-gray-100 dark:bg-gradient-to-br dark:from-gray-900 dark:to-black text-gray-900 dark:text-gray-200 transition duration-300">
+
+<!-- ================= NAVBAR ================= -->
+<nav class="fixed top-0 left-0 w-full z-50 backdrop-blur bg-white/70 dark:bg-black/40 shadow-md">
+  <div class="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
+    <span class="font-bold text-xl">John Mwangi</span>
+
+    <div class="space-x-5">
+      <a href="#home" class="hover:text-indigo-500">Home</a>
+      <a href="#projects" class="hover:text-indigo-500">Projects</a>
+      <a href="#resume" class="hover:text-indigo-500">Resume</a>
+      <a href="#contact" class="hover:text-indigo-500">Contact</a>
+
+      <!-- Dark Mode Toggle -->
+      <button id="themeToggle" class="ml-4 px-3 py-1 rounded-lg bg-indigo-500 text-white text-sm">
+        Toggle Mode
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- ================= MAIN ================= -->
+<main class="pt-28 px-6 flex justify-center">
+
+  <!-- 3D CARD -->
+  <div id="card"
+    class="max-w-5xl w-full bg-white/80 dark:bg-white/10 backdrop-blur-xl rounded-3xl p-10
+           shadow-[0_40px_80px_rgba(0,0,0,0.6)]
+           transition-transform duration-200">
+
+    <!-- ========== HOME ========= -->
+    <section id="home" class="mb-20 text-center">
+      <h1 class="text-4xl md:text-5xl font-extrabold">John Mwangi</h1>
+      <p class="mt-4 text-indigo-500 text-lg">
+        Business IT Student • Web Developer • Designer
+      </p>
+
+      <!-- Download CV -->
+      <a href="John_Mwangi_CV.pdf" download
+        class="inline-block mt-8 px-6 py-3 bg-indigo-600 text-white rounded-xl shadow-lg hover:scale-105 transition">
+        Download CV
+      </a>
+    </section>
+
+    <!-- ========== PROJECTS ========= -->
+    <section id="projects" class="mb-20">
+      <h2 class="text-3xl font-bold mb-6 border-b pb-2">Projects</h2>
+
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="bg-white/60 dark:bg-white/5 p-5 rounded-xl shadow-lg hover:shadow-indigo-500/30 transition">
+          <h3 class="font-bold text-lg">Portfolio Website</h3>
+          <p class="mt-2 text-sm">
+            Responsive portfolio built with HTML, Tailwind & JavaScript.
+          </p>
+        </div>
+
+        <div class="bg-white/60 dark:bg-white/5 p-5 rounded-xl shadow-lg hover:shadow-indigo-500/30 transition">
+          <h3 class="font-bold text-lg">Expense Tracker</h3>
+          <p class="mt-2 text-sm">
+            Python & Django app for tracking daily expenses.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== RESUME ========= -->
+    <section id="resume" class="mb-20">
+      <h2 class="text-3xl font-bold mb-6 border-b pb-2">Resume</h2>
+
+      <ul class="space-y-4">
+        <li class="bg-white/60 dark:bg-white/5 p-4 rounded-xl">
+          <strong>BSc Business with IT & Management</strong><br>
+          JKUAT (2024–2029)
         </li>
-    </ul>
-    <h2>Projects</h2>
-    <ul>
-        <li>Personal Portfolio Website
-            <ul>
-                <li>Developed a responsive portfolio website to showcase projects and skills using HTML, CSS, and JavaScript.</li>
-            </ul>
+
+        <li class="bg-white/60 dark:bg-white/5 p-4 rounded-xl">
+          <strong>Freelance Designer & Developer</strong><br>
+          2024 – Present
         </li>
-        <li>expense tracker app
-            <ul>
-                <li>Created a expese tracker app to help with daily transctaions  using Python and django to help users organize their daily tasks.</li>
-            </ul>
-        </li>
-    </ul>
-    <h2>References</h2>
-    <p>Available upon request.</p>
+      </ul>
+    </section>
+
+    <!-- ========== CONTACT ========= -->
+    <section id="contact">
+      <h2 class="text-3xl font-bold mb-6 border-b pb-2">Contact</h2>
+
+      <p>Email: <span class="text-indigo-500">johnmwangi1729@gmail.com</span></p>
+      <p>Phone: <span class="text-indigo-500">+254 745 884 952</span></p>
+    </section>
+
+  </div>
+</main>
+
+<!-- ================= SCRIPTS ================= -->
+<script>
+/* ---------- 3D MOUSE TILT ---------- */
+const card = document.getElementById("card");
+
+document.addEventListener("mousemove", (e) => {
+  const x = (window.innerWidth / 2 - e.clientX) / 25;
+  const y = (window.innerHeight / 2 - e.clientY) / 25;
+  card.style.transform = `rotateY(${x}deg) rotateX(${y}deg)`;
+});
+
+document.addEventListener("mouseleave", () => {
+  card.style.transform = "rotateY(0deg) rotateX(0deg)";
+});
+
+/* ---------- DARK / LIGHT TOGGLE ---------- */
+const toggle = document.getElementById("themeToggle");
+toggle.addEventListener("click", () => {
+  document.documentElement.classList.toggle("dark");
+});
+</script>
+
 </body>
-</html> 
+</html>
